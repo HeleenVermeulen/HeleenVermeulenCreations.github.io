@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
     <style>
         header {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* space between logo and text */
             padding: 20px;
         }
         header img {
-            display: block;
-            margin: 0 auto 10px auto; /* centers logo with spacing below */
-            width: 150px; /* adjust as needed */
+            width: 100px; /* adjust logo size */
+            height: auto;
+        }
+        header .site-title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
         }
         nav a {
             margin: 0 10px;
@@ -31,22 +42,18 @@
 <body>
     <header>
         <img src="images/logo.png" alt="Heleen Vermeulen Creations Logo">
-        <h1>Heleen Vermeulen</h1>
-        <p>Surface Designer</p>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="portfolio.html">Portfolio</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="site-title">
+            <h1>Heleen Vermeulen</h1>
+            <p>Surface Designer</p>
+        </div>
     </header>
 
-    <main>
-        <img src="https://via.placeholder.com/1000x400?text=Hero+Image+Placeholder" alt="Hero Placeholder" class="hero">
-    </main>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
 
-    <footer>
-        <p>&copy; 2025 Heleen Vermeulen Creations</p>
-    </footer>
-</body>
-</html>
+    <main>
+        <img src="https://via.placeholder.com/1000x400?text=Hero+Image+Pla
